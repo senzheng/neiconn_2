@@ -4,7 +4,7 @@
 // get all the tools we need
 var express  = require('express');
 var app      = express();
-var port     = process.env.PORT || 3000;
+var port     = process.env.PORT || 3001;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
@@ -37,7 +37,7 @@ io.on('connection' , function (socket){
     });
 });
 
-server.listen(3000);
+server.listen(3002);
 
 
 
