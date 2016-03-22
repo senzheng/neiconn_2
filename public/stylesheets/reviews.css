@@ -1,0 +1,188 @@
+body {
+	width: 100%;
+	height: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+ul li{
+          	display: inline-block;
+          }
+.reviewModule {
+	position: relative;
+	top: 100px;
+	width: 720px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.striple {
+	background-color: #e6e6e6;
+	height: 35px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.striple i{
+   margin-right: 8px;
+}
+
+.striple span:nth-child(1):hover{
+	cursor: pointer;
+}
+
+.striple span:nth-child(2) {
+	float: right;
+	margin-right: 45%;
+}
+
+.header {
+	height: 70px;
+}
+
+.left {
+	display: table;
+	top: 20%;
+    background-color:  #f2f2f2;
+    height: 80%;
+    
+}
+
+.middle {
+	display: table;
+	top: 20%;
+    background-color: #d9d9d9;
+    height: 80%;
+    
+}
+
+
+
+.right {
+	display: table;
+	top: 20%;
+    background-color: #a6a6a6;
+    height: 80%;
+    
+}
+
+.title {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.left:hover {
+	
+    top:0%;
+    height: 100%;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.middle:hover{
+   top:0%;
+   height: 100%;
+   cursor: pointer;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.right:hover{
+   top:0%;
+   height: 100%;
+   cursor: pointer;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+}
+
+.trip {
+	height: 40px;
+	background-color: #d9d9d9;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.trip i {
+	margin-top: 3px;
+	float: right;
+}
+
+.trip:hover{
+	cursor: pointer;
+}
+
+.reviewDetail {
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 430px;
+}
+
+.userpic2 {
+    margin-top: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+    width: 150px;
+	height: 150px;
+}
+.userpic2 img {
+	border-radius: 50%;
+    border: 1px solid #979797;
+    width: 100%;
+    height: 100%;
+}
+
+.objectItem {
+   position: relative;
+   height: 100px;
+   border-bottom: 1px solid black;
+}
+
+.objectItem td {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.updateForm {
+   position: relative;
+   height: 200px;
+}
+
+.content input {
+	width: 100%;
+	height: 200px;
+   line-height: 1em;
+   padding: 8px 0 0 0;
+}
+
+.submit {
+	margin-top: 20px;
+	width: 100%;
+	height: 30px;
+}
+
+.submit input {
+	float: right;
+	width: 40%;
+	height: 30px;
+	background-color: #009900;
+	border: 0;
+}
+
+.updateForm ul {
+	padding-top: 20px;
+	padding-left: 0;
+	float: left;
+}
+
+.rating {
+	height: 50px;
+}

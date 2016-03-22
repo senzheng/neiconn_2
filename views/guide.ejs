@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="guide"><!-- InstanceBegin template="/Templates/portal.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Bootstrap - Prebuilt Layout</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Bootstrap -->
+<link href="/css/bootstrap.css" rel="stylesheet">
+
+
+
+
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/node_modules/angular.min.js"></script>
+<script src="/controller/guideCtrl.js"></script>
+<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+<script type="text/javascript" src="/controller/orderCtrl.js"></script>
+<script type="text/javascript" src="/js/filters/customFilters.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.2.4.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/guide.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+ <script>
+    var review = <%- JSON.stringify(reviews) %>;
+
+ </script>
+
+
+</head>
+<body ng-controller="guideCtrl">
+	 <div class="container-fluid content">
+        <div class="slider">
+        	<img src="/images/ggb.jpg">
+        </div>
+        <div class="profile">
+        	<div class="left col-md-6">
+                <div class="userpic2">
+                	<img src="/images/owner1.jpg">
+                </div>
+                <div class="name">Name</div>
+                <div class="rating"><uib-rating ng-model="total" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" style="float: left" disabled></uib-rating><input type="text" name="rating" value="{{total}}" style="display:none"/><span class="reviewamount"> 12 Reviews</span></div>
+                
+                <div class="intro">
+                    <h5>INTRODUCTION</h5>
+                    <p>content goes here</p>
+                </div>
+        	</div>
+        	<div class="right col-md-6">
+                <div class="icon">
+                  <div class="icon-left"><i class="fa fa-heart-o fa-lg"></i></div>
+                  <div class="icon-right"><i class="fa fa-envelope-o fa-lg"></i></div>
+                </div>
+                <div class="contentwo">Wish I could be there Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                </div>
+                <div class="reviews">
+                	<div class="pangination">
+                    <span>REVIEWS</span>
+                       <ul>
+                       	 <li><button>1</button></li>
+                       </ul>
+                	</div>
+                	
+                    <div class="row">
+                		  <div class="col-md-3">
+                          <div class="userpic">
+                            <img src="/images/owner5.jpg">
+                          </div>
+                		  </div>
+                		   <div class="col-md-9">
+                            <ul>
+                            	<li>Name:</li>
+                            	<li><uib-rating ng-model="total" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" style="float: left" disabled></uib-rating><input type="text" name="rating" value="{{total}}" style="display:none"/>  3/10/16 </li>
+                            	<li>Wish I could be there Lorem ipsum dolor sit amet, consectetur adipisicing </li>
+                            </ul>
+                		  </div>
+                	
+                </div>
+        	</div>
+        </div>
+
+
+	 </div>
+</body>
+</html>
